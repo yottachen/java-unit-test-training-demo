@@ -20,6 +20,7 @@ public class OrderTest {
         Item[] items = new Item[]{null};
         Order order = new Order(items);
         order.asString();
+
         verify(order).asString();
     }
 
