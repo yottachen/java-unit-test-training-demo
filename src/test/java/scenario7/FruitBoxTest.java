@@ -1,4 +1,4 @@
-package fruit;
+package scenario7;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

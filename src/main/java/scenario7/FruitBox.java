@@ -1,4 +1,4 @@
-package fruit;
+package scenario7;
 
 public class FruitBox {
     public String getFruitName() {
