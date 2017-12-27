@@ -1,13 +1,10 @@
 package scenario8;
 
-public class FooDAO {
+public class FooDAO extends FrmBaseDAO implements FooDAOInterface {
 
-    private FrmBaseDAO frmBaseDAO;
+    private FrmBaseDAO frmBaseDAO = new FrmBaseDAO();
 
-    public FooDAO(FrmBaseDAO frmBaseDAO) {
-        this.frmBaseDAO = frmBaseDAO;
-    }
-
+    @Override
     public String fun() {
         return "fun";
     }
