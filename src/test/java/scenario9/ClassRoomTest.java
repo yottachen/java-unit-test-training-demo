@@ -2,8 +2,6 @@ package scenario9;
 
 import org.junit.Before;
 import org.junit.Test;
-import scenario9.ClassRoom;
-import scenario9.Student;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
