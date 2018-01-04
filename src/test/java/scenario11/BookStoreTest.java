@@ -36,9 +36,9 @@ public class BookStoreTest {
     @Test
     public void shouldReturnAllPenInfoByBuilder() throws Exception {
         // Use Builder annotation to create Pen object
-        Pen pen = Pen.builder().brand("Apple").Color("Red").price(12).build();
+        Pen pen = Pen.builder().brand("Apple").color("Red").price(12).occupation("occupation1").occupation("occupation2").build();
         bookStore.addPen(pen);
 
-        assertEquals("Apple Red 12", bookStore.getPenInfo());
+        assertEquals("Apple Red 12 [occupation1, occupation2]", bookStore.getPenInfo());
     }
 }

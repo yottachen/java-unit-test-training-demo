@@ -1,6 +1,7 @@
 package scenario11;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class BookStore {
@@ -34,7 +35,7 @@ public class BookStore {
     public String getPenInfo() {
         String out = "";
         for (Pen pen: pens) {
-            out += pen.getBrand() + " " + pen.getColor() + " " + pen.getPrice();
+            out += pen.getBrand() + " " + pen.getColor() + " " + pen.getPrice() + " " + Arrays.toString(pen.getOccupations().toArray());
         }
 
         return out;
