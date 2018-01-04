@@ -6,7 +6,6 @@ import lombok.Setter;
 import lombok.Singular;
 
 import java.util.List;
-import java.util.Set;
 
 @Builder
 public class Pen {
