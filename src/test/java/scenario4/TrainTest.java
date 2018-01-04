@@ -29,8 +29,7 @@ public class TrainTest {
 
     @Test
     public void testCallPublicMethod() throws Exception {
-        Train train = new Train();
-        Train trainSpy = PowerMockito.spy(train);
+        Train trainSpy = PowerMockito.spy(new Train());
 
         PowerMockito.when(trainSpy, method(Train.class, "callPrivateMethod", String.class))
                 .withArguments(anyString())
