@@ -14,6 +14,7 @@ public class BookStoreTest {
 
     @Test
     public void shouldReturnAllBooksNamesByMultipleSetMethods() throws Exception {
+        // Manually create Book object for BookStore
         Book book = new Book("Clean Code");
         book.setAuthorName("Yingying");
         book.setPress("IT publish press");
@@ -25,9 +26,19 @@ public class BookStoreTest {
 
     @Test
     public void shouldReturnAllBooksNamesByBuilder() throws Exception {
+        // Use created BookBuilder to generate Book object
         Book book = BookBuilder.create().name("Clean Code").authorName("Yingying").press("IT publish press").price(12).build();
 
         bookStore.addBook(book);
         assertEquals("Clean Code Yingying IT publish press 12", bookStore.getBookNames());
+    }
+
+    @Test
+    public void shouldReturnAllPenInfoByBuilder() throws Exception {
+        // Use Builder annotation to create Pen object
+        Pen pen = Pen.builder().brand("Apple").Color("Red").price(12).build();
+        bookStore.addPen(pen);
+
+        assertEquals("Apple Red 12", bookStore.getPenInfo());
     }
 }
