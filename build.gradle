@@ -36,6 +36,8 @@ project(":") {
         testCompile "org.powermock:powermock-api-mockito:1.6.5"
         testCompile "org.powermock:powermock-api-easymock:1.6.5"
         testCompile "org.powermock:powermock-module-junit4:1.6.5"
+        testCompile 'io.rest-assured:rest-assured:3.0.6'
+        testCompile 'com.google.code.gson:gson:2.8.2'
     }
 
 
